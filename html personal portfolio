@@ -23,16 +23,16 @@
                         <li><a href="#contact">Contact</a></li>
     <section id="hero"
      
-        <span>• AVAILABLE FOR NEW PROJECTS</span>
+        <span>• AVAILABLE FOR NEWPROJECTS</span>
         <!-- Main greeting -->
         <h1>
             Hi, I'm <span>Hamidah Lameck</span>
-    Frontend Developer
+            Frontend Developer
         </h1>
 
         <p>
             I'm a passionate frontend developer
-    focused on building 
+            focused on building 
             great digital projects.
         </p>
 
@@ -62,3 +62,80 @@
         }; </code></pre>
     </article>
     <section id="about">
+        <div>
+            <img src="pictures/hamidah.jpg" alt="Hamidah Shamim Lameck"> width="200">
+            <span>2+ YEARS OF EXPERIENCE</span>
+        </div>
+        <div>
+            <span>ABOUT ME</span>
+
+            <h2>Passionate About Building Great Products</h2>
+            <p>
+                I'm a frontend developer who 
+                enjoys turning ideas 
+                into clean, rensponsive, and user friendly
+                web experiences.
+            </p>
+
+            <p>i focus on writing accessible, maintainable 
+               code and creating
+               digital products that are both useful and 
+               enjoyable to use
+            </p>
+        </div>
+        <style>
+            .Highlight-card {
+                display: grid;
+                grid-template-columns: repeat(4,  1fr);
+                gap: 24px;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px 10px;
+            }
+            .highlight-card {
+                background-color: #ffffff;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .highlight-card:hover {
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+                
+            }
+            .highlight-card .icon {
+                display: block;
+                font-size: 10px;
+                margin-bottom: 10px;
+              
+            }
+            .highlight-card h3 {
+                font-size: 10px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+            .highlight-card p {
+                margin: 0;
+                line-height: 1.5;
+                font-size: 1rem;
+                color: #333;
+            }  
+        </style>
+        <div class="highlight-card"></div>
+            <article class="highlight-card">
+                <span class="icon">h3</span>
+
+            <h3>Result-Oriented</h3>
+            <p>Focused on delivering measurable outcomes and turning ideas into meaningful reasults.
+            </p>
+           </article>
+
+           <article class="highlight-card">
+                <span class="icon">h3</span>
+                <h3>Perfomance first</h3>
+                <p>
+                    Priotizes speed and reliability to create smooth experiences without complexity.
+                </p>
+                </article>
+                
