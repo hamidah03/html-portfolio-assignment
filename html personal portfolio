@@ -45,10 +45,20 @@
         
         <!-- Availability Badge -->
         <span>• AVAILABLE FOR BOOKING</span>
-</main>
-    <span></span>
-    <span></span>
-    <span></span>
-<pre>
-    
-</pre>
+
+        <!-- top bar -->
+        <div aria-hidden="true"> 
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- developer javascript object-->
+        <pre><code>const developer =  {
+            name: "Hamidah Lameck",
+            role: "Frontend Developer"
+            experience: "2+ years",
+            available for projects: true,
+        }; </code></pre>
+    </article>
+    <section id="about">
