@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hamidah Shamim Lameck - Frontend Developer Portfolio">
+    <title>Hamidah Shamim Lameck | Frontend Developer</title>
+</head>
+<body>
+
+    <header>
+        Hamidah.
+    </header>
+    <main>
+        <header>
+            <div>
+                <h2>Hamidah Shamim Lameck</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+    <section id="hero"
+     
+        <span>• AVAILABLE FOR NEW PROJECTS</span>
+        <!-- Main greeting -->
+        <h1>
+            Hi, I'm <span>Hamidah Lameck</span>
+    Frontend Developer
+        </h1>
+
+        <p>
+            I'm a passionate frontend developer
+    focused on building 
+            great digital projects.
+        </p>
+
+        <!-- Hero CTA links -->
+        <div>
+            <a href="#contact" class="btn btn-primary">Let's talk & rarr;</a>
+            <a href="#projects" class="btn btn-secondary">View My Work</a>
+        </div>
+    </section>
+        
+        <!-- Availability Badge -->
+        <span>• AVAILABLE FOR BOOKING</span>
+</main>
+    <span></span>
+    <span></span>
+    <span></span>
+<pre>
+    
+</pre>
