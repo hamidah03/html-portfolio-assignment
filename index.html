@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hamidah Shamim Lameck - Frontend Developer Portfolio">
     <title>Hamidah Shamim Lameck | Frontend Developer</title>
-    <!--link to frontawesome for inserting social meadia icons-->
-    <!--link to css file-->
-</head>
-<body>
 
+</head>
+
+<body>
     <header>
         Hamidah.
     </header>
@@ -17,7 +16,7 @@
         <header></header>
                 <!--navigation-->
             <nav class="navbar">
-                <a href="#Home" class="logo">Hamidah Shamim Lameck</a>
+                <a href="#Home" class="logo">NAVIGATION</a>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -30,11 +29,11 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <!--main greeting-->
-            <h1>Hi, I'm Hamidah Lameck Frontend Developer.</h1> 
+            <h1>Hi, I'm Hamidah Lameck a Frontend Developer.</h1> 
             <p>I'm a passionate frontend developer focused on building great digital projects.</p>
             <p class="highlight">Building digital experiences that merge creativity with technology.</p>
             <!--hero cta links-->
-            <a href="#contact" class="cta-button">Let's talk & rarr</a>
+            <a href="#contact" class="cta-button">Let's talk</a>
             <a href="#projects" class="btn btn-secondary">View My Work</a>
         </div>
      
@@ -60,10 +59,11 @@
     </article>
 
         <!--my about section-->
+    <section id="about">
     <main class="container main">
 
         <div class="about-image">
-            <img src="images/hamidah.jpg.jpg" alt="Hamidah Shamim Lameck Profile Photo" height="200">
+            <img src="images/hamidah.jpg.jpg" alt="about image" height="200">
             <span>2+ YEARS OF EXPERIENCE</span>
         </div>
 
@@ -237,83 +237,42 @@
     </section>
 
         <!-- contact section -->
-    <section id="Contact"
-    aria-labelledby="contact-heading">
-
-        <header>
-            <span>CONTACT ME</span>
-            <h2 id="contact-heading">
-                Let's build something together
-            </h2>
-            <p>
-            I'm currently open to new opportunities and collaborations. 
-            If you have a project in mind or just want to say hello, 
-            feel free to reach out!
-            </p>
-        </header>
-
-       <div>
-        <h3>Email</h3>
-        <a href="mailto:lameckshamimhamidah@gmail.com">lameckshamimhamidah@gmail.com</a>
-       </div>
-
-       <div>
-        <strong>Location</strong>
-        <span>Lilongwe, Malawi</span>
-       </div>
-       
-       <div>
-        <strong>Availability</strong>
-        <p>Monday - Friday, 7:30 Am - 6:00 Pm</p>
-       </div>
+    <section id="Contact">
+     <div class="contact">
+      <div class="text">
+        <span>Get In Touch</span>
+        <h2>Let's build something together</h2>
+        <p>I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello,feel free to reach out!</p>
+      </div>
+      <div class="contact-details">
+        <div class="contact">
+            <span>Email</span>
+            <p>lameckshamimhamidah@gmail.com"</p>
+            </span>
         </div>
-
-        <div>
-
-        <form action="message" method="POST">
-
-            <div>
-            <label for="name">Name</label>
-            <input
-                 type="text" 
-                 id="name" 
-                 name="name" 
-                 placeholder="Your Name"
-                 required>
-        </div>
-
-        <div>
-            <label for="email">Email</label>
-            <input 
-                 type="email" 
-                 id="email" 
-                 name="email"
-                 placeholder="your.email@example.com"
-                 required>
-        </div>
-
-        <div>
-        <label for="subject">Subject</label>
-        <input 
-                 type="text" 
-                 id="subject" 
-                 name="subject" 
-                 placeholder="project inquiry, collaboration, etc."
-                 required>
-        </div>
-
-        <div>
-            <label for="message">message</label>
-            <textarea 
-            id="message" 
-            name="message" 
-            rows="5" 
-            placeholder="Tell me about your project, or idea ..."
-            required>
-    ></textarea>
-        </div>
-
+      </div>
+    </div>
+<section id="Contact-form">
+    <div class="contact-form">
+        <form>
+            <div class="form-input">
+                <label for="">Name</label>
+                <input type="text" placeholder="FullName" required />
+            </div>
+            <div class="form-input">
+                <label for="">Email</label>
+                <input type="email" placeholder="your.email@example.com" required />
+            </div>
+            <div class="form-input">
+                <label for="">Subject</label>
+                <input type="text" placeholder="project inquiry, collaboration, etc." required />
+            </div>
+            <textarea width="100%" rows="5" placeholder="Tell me about your project, or idea ..." required></textarea>
             <button type="submit">Send message</button>
+        </form>
+        <div>
+        <form action="message" method="POST">
+        </div>
         </form>
         </div>
     </section>
@@ -343,16 +302,18 @@
         
         <div>
             <p>&copy; 2026 Hamidah Shamim Lameck. Cracfted with love.</p>
-
-            <nav aria-label="Social Media Links">
-                <ul>
-                    <li><a href="https://github.com">GitHub</a></li>
-                    <li><a href="https://linkedin.com">LinkedIn</a></li>
-                    <li><a href="https://twitter.com">Twitter/X</a></li>
-                </ul>
-            </nav>
+            <div class="social-links">
+                <a href="https://github.com/lameckshamimhamidah" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hamidah-lameck-1a2b3c4d5e/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.twitter.com/in/hamidah-lameck-1a2b3c4d5e/" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
     </footer>
-
     </body>
 </html>
