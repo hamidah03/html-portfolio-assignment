@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hamidah Shamim Lameck - Frontend Developer Portfolio">
     <title>Hamidah Shamim Lameck | Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <header>
-        Hamidah.
-    </header>
-    <main>
-        <header></header>
-                <!--navigation-->
-            <nav class="navbar">
+    <header class="site-header">
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="#home" class="logo" aria-label="Go to page"> Hamidah.</a>
                 <a href="#Home" class="logo">NAVIGATION</a>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -24,31 +21,39 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+    </header>
 
+    <main>
             <!--hero section-->
-    <section id="home" class="hero">
+    <section id="home" class="hero" aria-labelledby="hero-heading">
         <div class="hero-content">
             <!--main greeting-->
-            <h1>Hi, I'm Hamidah Lameck a Frontend Developer.</h1> 
+            <h1 id="hero-heading">Hi, I'm Hamidah Lameck a Frontend Developer.</h1> 
             <p>I'm a passionate frontend developer focused on building great digital projects.</p>
             <p class="highlight">Building digital experiences that merge creativity with technology.</p>
+
             <!--hero cta links-->
-            <a href="#contact" class="cta-button">Let's talk</a>
-            <a href="#projects" class="btn btn-secondary">View My Work</a>
+            <div class="hero-actions">
+               <a href="#contact" class="cta-button">Let's talk</a>
+               <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
         </div>
-     
     </section>
         
         <!-- Availability Badge -->
-        <span>• AVAILABLE FOR BOOKING</span>
+        <div class="availability-badge" aria-label="availability status">
+             <span aria-hidden="true">•</span>
+              AVAILABLE FOR BOOKING
+        </div>
 
         <!-- top bar -->
-        <div aria-hidden="true"> 
+    <section class ="developer-card" aria-labelledby="developer-heading">
+        <div class="code-window" aria-hidden="true"> 
             <span></span>
             <span></span>
             <span></span>
         </div>
-
+         <h2 id="developer-heading" class="sr-only">Developer Information</h2>
         <!-- developer javascript object-->
         <pre><code>const developer =  {
             name: "Hamidah Lameck",
@@ -56,34 +61,30 @@
             experience: "2+ years",
             available for projects: true,
         }; </code></pre>
-    </article>
+    </section>
 
         <!--my about section-->
-    <section id="about">
-    <main class="container main">
-
-        <div class="about-image">
-            <img src="images/hamidah.jpg.jpg" alt="about image" height="200">
+    <section id="about" class="about" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="about-image">
+            <img src="images/profile.jpg" alt="portrait of Hamidah Shamim Lameck" 
+            width="280" height="320">
             <span>2+ YEARS OF EXPERIENCE</span>
         </div>
-
-    <section class="about">
-        <div class="about-text">
-            <span>About me</span>
+        <div class="about-content">
+            <div class="about-text">
+               <span>About me</span>
+               <h2 id="about-heading">Passionate About Building Great Products</h2>
+               <p>I'm a frontend developer who 
+               enjoys turning ideas 
+               into clean, rensponsive, and user friendly
+               web experiences.</p>
+               <p>i focus on writing accessible, maintainable 
+               code and creating
+               digital products that are both useful and 
+               enjoyable to use</p>
         </div>
-
-            <h2>Passionate About Building Great Products</h2>
-            <p>I'm a frontend developer who 
-            enjoys turning ideas 
-            into clean, rensponsive, and user friendly
-            web experiences.
-            </p>
-            <p>i focus on writing accessible, maintainable 
-            code and creating
-            digital products that are both useful and 
-            enjoyable to use
-            </p>
-        
+        <!--about feature cards-->
         <div>
             <div>
                 <span>icon</span>
@@ -112,29 +113,25 @@
     </section>
 
         <!--my skills section-->
-    <section id="skills"
-    aria-labelledby="skills-heading">
-
-        <header>
+    <section id="skills" class="skills" aria-labelledby="skills-heading"></section>
+        <div class="container"></div>
+        <header class="section-header">
             <span>TECHNICAL SKILLS</span>
 
-            <h2 id="skills-heading">
-                My Technology Stack
-            </h2>
+            <h2 id="skills-heading">My Technology Stack</h2>
 
-             <p>
-                I have a strong foundation in frontend development, 
-                with expertise in React.js, Redux, Tailwind CSS, HTML5, CSS3, Vite. 
-                I am also proficient in React and have experience 
-                working with various frontend frameworks and libraries.
-             </p>
+            <p>I have a strong foundation in frontend development, 
+            with expertise in React.js, Redux, Tailwind CSS, HTML5, CSS3, Vite. 
+            I am also proficient in React and have experience 
+            working with various frontend frameworks and libraries.</p>
         </header>
 
-        <div>
-            <div>
+        <!--skills cards-->
+        <div class="skills-grid">
+        <!--frontend skills-->
+            <article class="skill-card">
                 <h3>Frontend</h3>
                 <p>Building semantic and accessible web pages.</p>
-
                 <ul>
                     <li><span>HTML5</span></li>   
                     <li><span>CSS3</span></li>  
@@ -143,9 +140,9 @@
                     <li><span>Tailwind CSS</span></li>  
                     <li><span>Vite</span></li>
                 </ul>
-            </div>
-
-            <div>
+            </article>
+        <!--deployment skills-->
+            <article class="skill-card">
                 <h3>Deployment</h3>
                 <p>Deploying websites and applications</p>
                 <ul>
@@ -154,11 +151,12 @@
                     <li><span>Supabase</span></li>
                     <li><span>Github Pages</span></li>
                 </ul>
-            </div>
+            </article>
 
-            <div>
+        <!--collaboration skills-->
+            <article class="skill-card">
                 <h3>Collaboration</h3>
-                <p>Implementing dynamic functionality and interactivity.</p>
+                <p>Always open to team work and working effectively in every team environments.</p>
 
                 <ul>
                     <li><span>Vercel</span></li>
@@ -166,131 +164,151 @@
                     <li><span>Supabase</span></li>
                     <li><span>GitHub Pages</span></li>
                 </ul>
-            </div>
+            </article>
 
-         <div>
+        <!--design skills-->
+            <article class="skill-card">
                 <h3>Design Tools</h3>
-                <p></p>
+                <p>Creating and refining visual designs.</p>
                 <ul>
                     <li><span>Figma</span></li>
                     <li><span>Adobe Photoshop</span></li>
                     <li><span>Adobe Illustrator</span></li>
                     <li><span>Canva</span></li>
                 </ul>
-            </div>
+            </article>
         </div>
     </section>
 
         <!-- projects section -->
-    <section id="Projects"
-    aria-labelledby="projects-heading">
-        <header>
-            <h2 class="projects-heading">
-                   MY WORK
-            </h2>
-            <span>Featured Projects</span>
+    <section id="Projects" class="projects" aria-labelledby="projects-heading">
+        <div class="container">
+        <header class="section-header">
+            <span>MY WORK</span>
+            <h2 id="projects-heading">Featured Projects</h2>
             <p>A selection of projects showcasing real-world applications and frontend development work.</p>
         </header>
 
-            <div>
-                <div>
-                    <img src="movie-finder.jpg" alt="Movie Finder Website Preview" height="200">
+            <article class="project-card">
+                <img src="movie-finder.jpg" alt="Movie Finder Website Preview" width="600" height="400">
+                <div class="project-content">
+                    <div class="project-tags">
                         <span>REACT</span>
                         <span>JAVASCRIPT</span>
                         <span>API</span>
-                        <h3>Movie Finder Website</h3>
-                        <p>A morden movie search application for discovering movies and their details.</p>
+                    </div>
+                    <h3>Movie Finder Website</h3>
+                    <p>A morden movie search application for discovering movies and their details.</p>
                 </div>
 
-                <div>
-                    <a href="https://movie-finder-website.vercel.app">Live Demo</a>
-                    <a href="https://github.com/lameck/movie-finder">GitHub</a>
+                <div class="project-links">
+                    <a href="https://movie-finder-website.vercel.app" target="blank" rel="noopener noreferrer">Live Demo</a>
+                    <a href="https://github.com/lameck/movie-finder" target="blank" rel="noopener noreferrer">GitHub</a>
                 </div>
+            </div>
+            </article>
 
-                <div>      
-                    <img src="music-recommendation.jpg" alt="Music Recommendation Website Preview" height="200">
+            <article class="project-card">  
+                <img src="music-recommendation.jpg" alt="Music Recommendation Website Preview" width="600" height="400">
+                <div class="project-content">
+                    <div class="project-tags">
                         <span>REACT</span>
                         <span>JAVASCRIPT</span>
                         <span>API</span>
-                        <h3>Music Recommendation Website</h3>
-                        <p>A music recommendation application that suggests songs based on user preferences.</p>
-                    
                 </div>
+                    <h3>Music Recommendation Website</h3>
+                    <p>A music recommendation application that suggests songs based on user preferences.</p>
 
-                <div>
-                    <a href="https://music-recommendation-website.vercel.app/">Live Demo</a>
+                <div class="project-links">
+                    <a href="https://music-recommendation-website.vercel.app/" target="blank" rel="noopener noreferrer">Live Demo</a>
                     <a href="https://github.com/lameck/music-recommendation">GitHub</a>
                 </div>
+                </div>
+            </article>
 
-                <div>
-                    <img src="task-dashboard.jpg" alt="Task Dashboard Website Preview" height="200">
+            <article class="project-card">
+                <img src="task-dashboard.jpg" alt="Task Dashboard Website Preview" width="600" height="400">
+                <div class="project-content">
+                    <div class="project-tags">
                         <span>REACT</span>
                         <span>JAVASCRIPT</span>
                         <span>API</span>
+                    </div>
                         <h3>Task Dashboard Website</h3>
                         <p>A task management application for organizing and tracking daily activities efficiently.</p>
-                <div>
+                <div class="project-links">
                     <a href="https://task-dashboard-website.vercel.app/">Live Demo</a>
                     <a href="https://github.com/lameck/task-dashboard">GitHub</a>
                 </div>
             </div>
+            </article>
+        </div>
+    </div>
     </section>
 
         <!-- contact section -->
-    <section id="Contact">
-     <div class="contact">
-      <div class="text">
-        <span>Get In Touch</span>
-        <h2>Let's build something together</h2>
-        <p>I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello,feel free to reach out!</p>
-      </div>
-      <div class="contact-details">
-        <div class="contact">
-            <span>Email</span>
-            <p>lameckshamimhamidah@gmail.com"</p>
-            </span>
+    <section id="Contact" class="contact" aria-labelledby="contact-heading">
+        <div class="container">
+            <header class="section-header">
+               <span>Get In Touch</span>
+               <h2>Let's build something together</h2>
+               <p>I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello,feel free to reach out!</p>
+            </header>
+        <div class="contact-details">
+            <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:lameckshamimhamidah@gmail.com">lameckshamimhamidah@gmail.com</a>
+            </div>
         </div>
       </div>
-    </div>
-<section id="Contact-form">
-    <div class="contact-form">
-        <form>
-            <div class="form-input">
+    </section>
+
+        <!-- contact form section -->
+    <form class="contact-form" action="message" method="POST">
+            <div class="form-group">
                 <label for="">Name</label>
-                <input type="text" placeholder="FullName" required />
+                <input type="text" placeholder="FullName" autocomplete="name" required />
             </div>
-            <div class="form-input">
+
+            <div class="form-group">
                 <label for="">Email</label>
-                <input type="email" placeholder="your.email@example.com" required />
+                <input type="email" id="email" placeholder="your.email@example.com" required />
             </div>
-            <div class="form-input">
-                <label for="">Subject</label>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
                 <input type="text" placeholder="project inquiry, collaboration, etc." required />
             </div>
-            <textarea width="100%" rows="5" placeholder="Tell me about your project, or idea ..." required></textarea>
-            <button type="submit">Send message</button>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea width="100%" rows="5" placeholder="Tell me about your project, or idea ..." required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
         </form>
-        <div>
-        <form action="message" method="POST">
-        </div>
-        </form>
-        </div>
+      </div>
     </section>
 </main>
 
-    <footer>
-
-        <div>
-            <div>
-                <a href="index.html" aria-label="Hamidah Shamim Lameck">
-                Hamidah.
+        <!-- footer section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+        <!--footer introduction-->
+            <div class="footer-about">
+                <a 
+                  href="#home" 
+                  class="footer-logo"
+                  aria-label="Hamidah Shamim Lameck">
+                  Hamidah.
                 </a>
 
                 <p>I am a frontend developer who enoys creating user-friendly websites. I love turning ideas into effective digital experience.</p>
             </div>
 
+            <!--footer navigation-->
             <nav aria-label="Footer Navigation">
-                <h2>NAVIGATE</h2>
+                <h2>Navigate</h2>
+
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -300,10 +318,12 @@
             </nav>
         </div>
         
-        <div>
+        <!--copyright and social links-->
+        <div class="footer-bottom">
             <p>&copy; 2026 Hamidah Shamim Lameck. Cracfted with love.</p>
+
             <div class="social-links">
-                <a href="https://github.com/lameckshamimhamidah" target="_blank" aria-label="GitHub">
+                <a href="https://github.com/lameckshamimhamidah" target="_blank" aria-label="visit Hamida's GitHub profile">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/hamidah-lameck-1a2b3c4d5e/" target="_blank" aria-label="LinkedIn">
@@ -315,5 +335,5 @@
             </div>
         </div>
     </footer>
-    </body>
+</body>
 </html>
